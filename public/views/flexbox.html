@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Flexbox</title>
+  </head>
+  <body>
+    <main class="m-8">
+      <section
+        class="h-64 bg-gray-800 p-8 flex flex-row items-baseline justify-around"
+      >
+        <div class="text-white order-3">Hello</div>
+        <div class="bg-gray-300 px-4 py-2 m-2 order-2">Home</div>
+        <div class="bg-gray-300 px-4 py-2 m-2 order-1">About</div>
+        <div class="bg-gray-300 px-4 py-2 m-2 order-4">Contact us</div>
+        <div class="bg-gray-300 px-4 py-2 m-2 order-10">Careers</div>
+      </section>
+
+      <section>
+        <h2 class="text-center">Flex direction</h2>
+        <div class="flex flex-col">
+          <div class="bg-blue-300 px-4 py-2 m-2">1</div>
+          <div class="bg-blue-300 px-4 py-2 m-2">2</div>
+          <div class="bg-blue-300 px-4 py-2 m-2">3</div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-center">Flex align items</h2>
+        <div class="flex items-center">
+          <div class="bg-blue-300 px-4 py-2 m-2">1</div>
+          <div class="bg-blue-300 px-4 py-2 m-2">2</div>
+          <div class="bg-blue-300 px-4 py-2 m-2">3</div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-center">Flex Justify content</h2>
+        <div class="flex justify-center">
+          <div class="bg-blue-300 px-4 py-2 m-2">1</div>
+          <div class="bg-blue-300 px-4 py-2 m-2">2</div>
+          <div class="bg-blue-300 px-4 py-2 m-2">3</div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-center">Flex Order</h2>
+        <div class="flex justify-center items-center">
+          <div class="order-3 bg-blue-300 px-4 py-2 m-2">1</div>
+          <div class="order-1 bg-blue-300 px-4 py-2 m-2">2</div>
+          <div class="order-2 bg-blue-300 px-4 py-2 m-2">3</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

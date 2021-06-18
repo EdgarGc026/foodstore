@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.zoom {
+  transform: scale(2);
+}
+
+/* Variantes */
+@variants hover {
+  .zoom {
+    transform: scale(2);
+    transition: 2s;
+  }
+}
+
+/* Responsive */
+@responsive {
+  .rotate-45 {
+    transform: rotate(45deg);
+    transition: 2s;
+  }
+}
+
+/* Reto */
+.btn {
+  @apply font-bold py-2 px-4 rounded text-lg w-full sm:w-48;
+}
+
+.btn-blue {
+  @apply bg-blue-500 hover:bg-blue-700 text-white;
+}
+.btn-red {
+  @apply bg-red-500 hover:bg-red-700 text-white;
+}
+.btn-yellow {
+  @apply bg-yellow-500 hover:bg-yellow-700 text-white;
+}
+
+.alert {
+  @apply py-2 px-4 text-lg text-center rounded border-solid w-full sm:w-80 mb-3;
+}
+
+.alert-neutro {
+  @apply py-2 px-4 rounded bg-gray-100 text-gray-500 border-gray-300;
+}
+
+.alert-danger {
+  @apply py-2 px-4 rounded bg-red-100 text-red-500 border-red-300;
+}
+
+.alert-warning {
+  @apply py-2 px-4 rounded bg-yellow-100 text-yellow-500 border-yellow-300;
+}
+
+.alert-info {
+  @apply py-2 px-4 rounded bg-blue-100 text-blue-500 border-blue-300;
+}
