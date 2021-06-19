@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-h1 {
+/* h1 {
   @apply text-3xl text-green-700 font-semibold;
 }
 
@@ -12,4 +12,73 @@ h2 {
 
 h3 {
   @apply text-xl text-yellow-700 font-semibold;
+}
+ */
+
+.header-section {
+  @apply px-2 bg-secondary text-white flex justify-between items-center;
+}
+
+.header-image {
+  @apply h-8 py-1;
+}
+
+.header-text {
+  @apply text-2xl cursor-pointer;
+}
+
+.hero-image {
+  @apply h-56  md:bg-center bg-cover bg-no-repeat bg-bottom;
+}
+
+.card-section {
+  @apply flex flex-col md:flex-row;
+}
+
+.card {
+  @apply m-4 rounded-lg md:w-1/2 md:flex md:bg-white md:shadow-lg md:items-center;
+}
+
+.card-image {
+  @apply rounded-lg object-cover mx-auto;
+}
+
+.card-body {
+  @apply relative mx-2 p-2 shadow-lg md:w-full rounded-lg mt-2 bg-white md:bg-transparent md:shadow-none;
+}
+
+.card-title {
+  @apply text-xl tracking-tight font-semibold uppercase text-gray-900 md:text-lg;
+}
+
+.card-text {
+  @apply text-gray-700 leading-snug;
+}
+
+.card-price {
+  @apply mt-2 text-sm font-semibold text-gray-700;
+}
+
+.card-review {
+  @apply mt-2 text-xs text-yellow-700;
+}
+
+.form-control {
+  @apply w-full bg-gray-300 border border-blue-300 py-1 px-4 rounded text-gray-800 placeholder-secondary leading-snug hover:bg-white focus:outline-none focus:ring;
+}
+
+.btn {
+  @apply block mx-auto px-4 py-1 rounded shadow-xl bg-primary text-white hover:shadow-none hover:bg-yellow-500;
+}
+
+.footer {
+  @apply w-full bg-secondary text-white;
+}
+
+.footer-container {
+  @apply md:flex md:flex-row-reverse justify-around;
+}
+
+.footer-item {
+  @apply hover:text-primary cursor-pointer transition ease-out duration-200;
 }
